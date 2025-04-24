@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/unlockactivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your PIN"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        android:paddingBottom="5dp"/>
+
+
+
+    <!-- PIN Display -->
+    <LinearLayout
+        android:id="@+id/pin_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 6 Boxes for PIN Input -->
+        <View
+            android:id="@+id/box1"
+            style="@style/PinBox" />
+
+        <View
+            android:id="@+id/box2"
+            style="@style/PinBox" />
+
+        <View
+            android:id="@+id/box3"
+            style="@style/PinBox" />
+
+        <View
+            android:id="@+id/box4"
+            style="@style/PinBox" />
+
+        <View
+            android:id="@+id/box5"
+            style="@style/PinBox" />
+
+        <View
+            android:id="@+id/box6"
+            style="@style/PinBox" />
+
+    </LinearLayout>
+    <!-- Biometric & Reset Password -->
+    <Button
+        android:id="@+id/btn_fingerprint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Use Fingerprint"
+        android:textColor="@color/green"
+        />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Change PIN"
+        android:textColor="@android:color/holo_red_light" />
+    <Button
+        android:id="@+id/btn_forgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Forgot PIN"
+        android:textColor="@android:color/holo_red_light" />
+
+    <!-- Numeric Keyboard -->
+    <!-- Centered Numeric Keyboard -->
+    <GridLayout
+        android:id="@+id/keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:columnCount="3"
+        android:gravity="center"
+        android:rowCount="4">
+
+        <!-- Buttons 1-9 -->
+        <Button
+            style="@style/NumKey"
+            android:text="1" />
+
+        <Button
+            style="@style/NumKey"
+            android:text="2" />
+
+        <Button
+            style="@style/NumKey"
+            android:text="3" />
+
+        <Button
+            style="@style/NumKey"
+            android:text="4" />
+
+        <Button
+            style="@style/NumKey"
+            android:text="5" />
+
+        <Button
+            style="@style/NumKey"
+            android:text="6" />
+
+        <Button
+            style="@style/NumKey"
+            android:text="7" />
+
+        <Button
+            style="@style/NumKey"
+            android:text="8" />
+
+        <Button
+            style="@style/NumKey"
+            android:text="9" />
+
+        <Button
+            style="@style/NumKey"
+            android:text="." />
+        <Button
+            style="@style/NumKey"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            style="@style/NumKey"
+            android:text="⌫" />
+
+    </GridLayout>
+
+
+</LinearLayout>

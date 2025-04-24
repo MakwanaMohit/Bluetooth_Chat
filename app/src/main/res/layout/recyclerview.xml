@@ -23,10 +23,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Msgmessage"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="5dp"
         android:layout_below="@+id/Msgdatetime"
+        android:text="Semester: 5"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MsgUri"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/Msgmessage"
         android:text="Semester: 5"/>
     <TextView
         android:layout_width="wrap_content"
@@ -35,7 +44,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_below="@+id/Msgmessage"
+        android:layout_below="@+id/MsgUri"
         android:text="Semester: 5"/>
     <View
         android:layout_width="match_parent"

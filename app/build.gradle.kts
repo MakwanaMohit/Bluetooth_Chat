@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    namespace = "com.mk.bluetoothchat"
+    namespace = "com.mk.securechat"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.mk.bluetoothchat"
-        minSdk = 29
+        applicationId = "com.mk.securechat"
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -38,6 +38,7 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.swiperefreshlayout)
+    implementation(libs.biometric)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
